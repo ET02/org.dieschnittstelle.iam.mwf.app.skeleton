@@ -23,4 +23,19 @@ export class MyEntity extends EntityManager.Entity {
 
 // TODO-REPEATED: add new entity class declarations here
 
+export class MediaItem extends EntityManager.Entity {
+
+    title;
+    src;
+    added;
+
+    constructor(title, src) {
+        super();
+        this.title = title;
+        this.src = src;
+        this.added = new Date();
+    }
+
+}
+
 
